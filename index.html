@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Resizer</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="uploadbox">
+				<div class="beforeload">
+					<input
+						type="file"
+						id="filebox"
+						name="filename"
+						accept="image/*"
+						hidden
+					/>
+					<img src="upload.svg" alt="upload" />
+					<p>Browse File to upload</p>
+				</div>
+			</div>
+
+			<div class="resizebox">
+				<div class="sizebox">
+					<div class="sizer">
+						<label for="width">Width</label>
+						<input class="numb" type="number" id="width" />
+					</div>
+					<div class="sizer">
+						<label for="height">Height</label>
+						<input class="numb" type="number" id="height" />
+					</div>
+				</div>
+				<div class="checkbox">
+					<div class="checker">
+						<input type="checkbox" name="ratio" class="tick" id="lockratio" />
+						<label for="lockratio">Lock aspect ratio</label>
+					</div>
+
+					<div class="checker">
+						<input
+							type="checkbox"
+							name="quality"
+							class="tick"
+							id="redquality"
+						/>
+						<label for="redquality">Reduce quality</label>
+					</div>
+				</div>
+				<div class="btn">
+					<button>DOWNLOAD IMAGE</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
